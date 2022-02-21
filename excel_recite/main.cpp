@@ -11,6 +11,7 @@
 #include <algorithm>
 #include <iterator>
 #include <Mmsystem.h>
+#include <direct.h>
 #pragma comment(lib,"WinMM.Lib")
 using namespace std;
 
@@ -47,12 +48,13 @@ struct button* createButton(int x, int y, int width, int height, COLORREF color,
 }
 //按钮设置
 struct button* load = createButton(10 * uWidth, 10 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "加载csv");
-struct button* choose = createButton(10 * uWidth, 70 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "存储路径");
-struct button* save = createButton(10 * uWidth, 130 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "保存文件");
-struct button* exportFile = createButton(10 * uWidth, 190 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "导出文件");
-struct button* musicOn = createButton(10 * uWidth, 300 * uHeight, 200 * uWidth, 50 * uHeight, 0x3366ff, "振作起来");
-struct button* start = createButton(10 * uWidth, 380 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "开始记忆");
-struct button* review = createButton(10 * uWidth, 440 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "复习本轮");
+//struct button* choose = createButton(10 * uWidth, 70 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "存储路径");
+struct button* save = createButton(10 * uWidth, 70 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "保存文件");
+struct button* exportFile = createButton(10 * uWidth, 130 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "导出文件");
+struct button* musicOn = createButton(10 * uWidth, 260 * uHeight, 200 * uWidth, 50 * uHeight, 0x3366ff, "振作起来");
+struct button* start = createButton(10 * uWidth, 340 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "开始记忆");
+struct button* review = createButton(10 * uWidth, 400 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "复习本轮");
+struct button* chineseSwitch = createButton(10 * uWidth, 500 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "释义显示");
 struct button* remember = createButton(10 * uWidth, 560 * uHeight, 200 * uWidth, 50 * uHeight, 0x32CD32, "记    得");
 struct button* forget = createButton(10 * uWidth, 620 * uHeight, 200 * uWidth, 50 * uHeight, 0x3C14DC, "遗    忘");
 //画按钮
@@ -73,8 +75,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 	{
 		if (pB == load)
 			load->color = 0xB69C88;
-		else if (pB == choose)
-			choose->color = 0xB69C88;
+		else if (pB == chineseSwitch)
+			chineseSwitch->color = 0xD7D7B9;
 		else if (pB == save)
 			save->color = 0xB69C88;
 		else if (pB == exportFile)
@@ -94,8 +96,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 	}
 	if (pB == load)
 		load->color = 0xDEC4B0;
-	else if (pB == choose)
-		choose->color = 0xDEC4B0;
+	else if (pB == chineseSwitch)
+		chineseSwitch->color = 0xFFFFE1;
 	else if (pB == save)
 		save->color = 0xDEC4B0;
 	else if (pB == exportFile)
@@ -192,6 +194,7 @@ int main() {
 	bool bool_end = false;
 	bool bool_review = false;
 	bool lerp = false;
+	bool bool_chinese = false;
 	int amount = 0;
 	int npos = 0;
 	int correct = 0;
@@ -206,13 +209,13 @@ int main() {
 	LPCSTR str[6];
 	vector<Word> words;
 	vector<Word>::iterator iter;
-	fstream prep;
-	prep.open("data.dat");
-	prep >> path;
-	prep.close();
 
-	//读取文件
+	//自动读取文件
 	ifstream myFile;
+	char buffer[MAX_PATH];
+	getcwd(buffer, MAX_PATH);
+	path = buffer;
+	path = path + "\\save.csv";
 	myFile.open(path);
 
 	string line = "";
@@ -246,6 +249,14 @@ int main() {
 		words.push_back(Words);
 
 		for (int i = 0; i < words.size(); i++) {
+			words[i].TheWord.erase(std::remove(words[i].TheWord.begin(), words[i].TheWord.end(), '\"'), words[i].TheWord.end());
+		}
+
+		for (int i = 0; i < words.size(); i++) {
+			words[i].WordClass.erase(std::remove(words[i].WordClass.begin(), words[i].WordClass.end(), '\"'), words[i].WordClass.end());
+		}
+
+		for (int i = 0; i < words.size(); i++) {
 			words[i].Chinese.erase(std::remove(words[i].Chinese.begin(), words[i].Chinese.end(), '\"'), words[i].Chinese.end());
 		}
 		line = "";
@@ -254,14 +265,13 @@ int main() {
 	for (auto Words : words) {
 		Words.display();
 	}
-	cout << words.size() << endl;
 	while (1) 
 	{
 		BeginBatchDraw();
 		setfillcolor(0xE16941);
 		fillrectangle(0, 0, 1280 * uWidth, 720 * uHeight);
 		drawButton(load);
-		drawButton(choose);
+		//drawButton(choose);
 		drawButton(save);
 		drawButton(exportFile);
 		drawButton(start);
@@ -269,6 +279,7 @@ int main() {
 		drawButton(remember);
 		drawButton(forget);
 		drawButton(musicOn);
+		drawButton(chineseSwitch);
 		
 		//开始记忆
 		if (bool_start == true) {
@@ -286,12 +297,13 @@ int main() {
 			outtextxy(250 * uWidth, 230 * uHeight, str[1]);
 			
 			//设置中文
-			settextcolor(BLACK);
-			setbkmode(TRANSPARENT);
-			settextstyle(100 * uHeight, 50 * uWidth, "黑体");
-			str[2] = words[npos].Chinese.c_str();
-			outtextxy(250 * uWidth, 350 * uHeight, str[2]);
-
+			if (bool_chinese == true) {
+				settextcolor(BLACK);
+				setbkmode(TRANSPARENT);
+				settextstyle(100 * uHeight, 50 * uWidth, "黑体");
+				str[2] = words[npos].Chinese.c_str();
+				outtextxy(250 * uWidth, 350 * uHeight, str[2]);
+			}
 			//设置遗忘次数
 			settextcolor(BLACK);
 			setbkmode(TRANSPARENT);
@@ -403,6 +415,14 @@ int main() {
 				words.push_back(Words);
 
 				for (int i = 0; i < words.size(); i++) {
+					words[i].TheWord.erase(std::remove(words[i].TheWord.begin(), words[i].TheWord.end(), '\"'), words[i].TheWord.end());
+				}
+
+				for (int i = 0; i < words.size(); i++) {
+					words[i].WordClass.erase(std::remove(words[i].WordClass.begin(), words[i].WordClass.end(), '\"'), words[i].WordClass.end());
+				}
+
+				for (int i = 0; i < words.size(); i++) {
 					words[i].Chinese.erase(std::remove(words[i].Chinese.begin(), words[i].Chinese.end(), '\"'), words[i].Chinese.end());
 				}
 				line = "";
@@ -414,7 +434,7 @@ int main() {
 
 		}
 
-		//2设置存储路径
+		/*2设置存储路径
 		if (clickButton(choose, m))
 		{
 			TCHAR szBuffer[MAX_PATH] = { 0 };
@@ -437,6 +457,7 @@ int main() {
 			data << path << endl;
 			data.close();
 		}
+		*/
 
 		//3保存文件
 		if (clickButton(save, m))
@@ -492,6 +513,7 @@ int main() {
 				amount = atoi(s)-1;
 				bool_start = true;
 				bool_end = false;
+				bool_chinese = true;
 			}
 		}
 
@@ -505,6 +527,7 @@ int main() {
 				amount = iter - words.begin() - 1;
 				bool_start = true;
 				bool_end = false;
+				bool_chinese = false;
 			}
 		}
 
@@ -553,6 +576,11 @@ int main() {
 			else
 				PlaySound(NULL, NULL, SND_FILENAME | SND_ASYNC);
 			
+		}
+
+		//中文释义开关
+		if (clickButton(chineseSwitch, m)) {
+			bool_chinese = !bool_chinese;
 		}
 		EndBatchDraw();
 	}
