@@ -11,9 +11,9 @@
 #include <algorithm>
 #include <iterator>
 #include <Mmsystem.h>
-#pragma comment(lib,"WinMM.Lib")
-#include "ui.h"
 #include <direct.h>
+#include "ui.h"
+#pragma comment(lib,"WinMM.Lib")
 using namespace std;
 
 //结构体数组存储数据
@@ -172,6 +172,8 @@ int main() {
 		//单词未记忆数量
 		//当前一轮学习量剩余
 		//遗忘率低于25%的单词数量
+		if (amount < 0)
+			amount = 0;
 		sort(words.begin(), words.end(), compReview);
 		iter = find(words.begin(), words.end(), 0);
 		wordAmount = words.size();
@@ -181,17 +183,19 @@ int main() {
 		sort(words.begin(), words.end(), compRate);
 		
 		iter = words.begin();
-		if (iter->ReviewTime == 0)
-			temp = 1;
-		else
-			temp = iter->ReviewTime;
-		while (((float)iter->ForgetTime / (float)temp) >= 0.25) {
-			iter++;
-			if (iter->ReviewTime == 0) 
+		if (iter._Ptr != nullptr) {
+			if (iter->ReviewTime == 0)
 				temp = 1;
 			else
 				temp = iter->ReviewTime;
-			
+			while (((float)iter->ForgetTime / (float)temp) >= 0.25) {
+				iter++;
+				if (iter->ReviewTime == 0)
+					temp = 1;
+				else
+					temp = iter->ReviewTime;
+
+			}
 		}
 		wordMaster = iter - words.begin();
 		drawStatus(wordAmount, wordMemory, wordNeedMemory, wordRest, wordMaster);
@@ -367,35 +371,39 @@ int main() {
 		//7记得
 		if (clickButton(remember, m))
 		{
-			words[npos].ReviewTime++;
-			if (npos < (int)(words.size() - 1)) {
-				npos++;
-				amount--;
-			}
-			else
-				amount = -1;
-			if (amount < 0)
-			{
-				bool_start = false;
-				bool_end = true;
+			if (bool_start == true||bool_end == false) {
+				words[npos].ReviewTime++;
+				if (npos < (int)(words.size() - 1)) {
+					npos++;
+					amount--;
+				}
+				else
+					amount = -1;
+				if (amount < 0)
+				{
+					bool_start = false;
+					bool_end = true;
+				}
 			}
 		}
 
 		//8遗忘
 		if (clickButton(forget, m))
 		{
-			words[npos].ForgetTime++;
-			words[npos].ReviewTime++;
-			if (npos < (int)(words.size() - 1)) {
-				npos++;
-				amount--;
-			}
-			else
-				amount = -1;
-			if (amount < 0)
-			{
-				bool_start = false;
-				bool_end = true;
+			if (bool_start == true || bool_end == false) {
+				words[npos].ForgetTime++;
+				words[npos].ReviewTime++;
+				if (npos < (int)(words.size() - 1)) {
+					npos++;
+					amount--;
+				}
+				else
+					amount = -1;
+				if (amount < 0)
+				{
+					bool_start = false;
+					bool_end = true;
+				}
 			}
 		}
 
