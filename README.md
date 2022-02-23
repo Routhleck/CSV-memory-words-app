@@ -6,7 +6,7 @@ bug反馈请私信~
 
 excel模板是example.xlsx
 
-![image-20220223163915383](C:\Users\13107\AppData\Roaming\Typora\typora-user-images\image-20220223163915383.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.3/img-folder/image-20220223164934999.png)
 
 # V0.1
 
