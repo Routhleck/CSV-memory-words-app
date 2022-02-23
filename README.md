@@ -1,4 +1,4 @@
-# CSV背单词v0.3
+# CSV背单词v0.4
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -96,3 +96,17 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 ### 撤销上个单词记忆
 
 将上两步操作合并在一起，便于取消上个单词的误操作
+
+# V0.4
+
+## 更新功能按钮
+
+###优化复习
+
+本复习方法将不会把已掌握单词(记忆次数-遗忘次数)/(记忆次数+1)大于70%的单词数量）划入复习范围中
+
+## 更新界面信息
+
+###统计图表
+
+![Image text]https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.4/img-folder/1645626102(1).jpg
