@@ -51,13 +51,13 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 
 ## 界面显示说明:
 
-![image-20220223165152022](C:\Users\13107\AppData\Roaming\Typora\typora-user-images\image-20220223165152022.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.3/img-folder/image-20220223165152022.png)
 
 # V0.2
 
 ## 更新界面信息：
 
-![image-20220223165629927](C:\Users\13107\AppData\Roaming\Typora\typora-user-images\image-20220223165629927.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.3/img-folder/image-20220223165629927.png)
 
 ### 单词总数 
 
@@ -83,7 +83,7 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 
 ## 更新功能按钮：
 
-![image-20220223165834447](C:\Users\13107\AppData\Roaming\Typora\typora-user-images\image-20220223165834447.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.3/img-folder/image-20220223165834447.png)
 
 ### 撤销记忆
 
