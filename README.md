@@ -109,4 +109,4 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 
 ###统计图表
 
-![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.4/img-folder/1645626102(1)).jpg
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.4/img-folder/1645626102(1).jpg)
