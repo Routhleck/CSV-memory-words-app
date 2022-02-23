@@ -1,4 +1,0 @@
-﻿  main.cpp
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(41,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(185,16): warning C4996: 'GetMouseMsg': This function is deprecated. Instead, use this new function: getmessage. See https://docs.easyx.cn/getmessage for details.
-  excel_recite.vcxproj -> F:\c++_sourceCode\2022年\excel背单词\excel_recite\Debug\excel_recite.exe
