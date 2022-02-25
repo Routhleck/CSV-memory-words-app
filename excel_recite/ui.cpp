@@ -1,6 +1,8 @@
 #include"ui.h"
 #include<string>
+#include <chrono>
 using namespace std;
+using namespace std::chrono;
 
 //按钮
 struct button
@@ -67,6 +69,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 			lastWord->color = 0x928700;
 		else if (pB == undoMemoryLastWord)
 			undoMemoryLastWord->color = 0x928700;
+		else if (pB == reviewPlus)
+			reviewPlus->color = 0xD7D7B9;
 
 		return true;
 	}
@@ -94,6 +98,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 		lastWord->color = 0xACA600;
 	else if (pB == undoMemoryLastWord)
 		undoMemoryLastWord->color = 0xACA600;
+	else if (pB == reviewPlus)
+		reviewPlus->color = 0xFFFFE1;
 	return false;
 }
 //判断鼠标点击按钮
@@ -105,6 +111,40 @@ bool clickButton(struct button* pB, MOUSEMSG m)
 	}
 	return false;
 
+}
+
+double fps() {
+	static double fps = 0.0;
+	static int frameCount = 0;
+	static auto lastTime = system_clock::now();
+	static auto curTime = system_clock::now();
+
+	curTime = system_clock::now();
+
+	auto duration = duration_cast<microseconds>(curTime - lastTime);
+	double duration_s = double(duration.count()) * microseconds::period::num / microseconds::period::den;
+
+	if (duration_s > 2)//2秒之后开始统计FPS
+	{
+		fps = frameCount / duration_s;
+		frameCount = 0;
+		lastTime = curTime;
+	}
+
+	++frameCount;
+
+	return fps;
+}
+
+void drawFps()
+{
+	TCHAR* c_fps = 0;
+	itoa((int)fps(),c_fps,10);
+	settextcolor(BLACK);
+	setbkmode(TRANSPARENT);
+	settextstyle(20 * uHeight, 10 * uWidth, "黑体");
+	outtextxy(200 * uWidth, 0 * uHeight, "FPS:");
+	outtextxy(240 * uWidth, 0 * uHeight, c_fps);
 }
 
 //绘制所有按钮
@@ -121,11 +161,12 @@ void drawAllButton() {
 	drawButton(undoMemory);
 	drawButton(lastWord);
 	drawButton(undoMemoryLastWord);
+	drawButton(reviewPlus);
 }
 
 //开始记忆时绘制
-void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value3,int value4) {
-	LPCSTR str[6];
+void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value3,int value4, char* refLastWord, char* refLastClass, char* refLastChinese, bool bool_history,bool last) {
+	LPCSTR str[9];
 	string ForgetTime;
 	string ReviewTime;
 	int correct = 0;
@@ -137,13 +178,13 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 	setbkmode(TRANSPARENT);
 	settextstyle(140 * uHeight, 70 * uWidth, "黑体");
 	str[0] = value0;
-	outtextxy(250 * uWidth, 80 * uHeight, str[0]);
+	outtextxy(250 * uWidth, 270 * uHeight, str[0]);
 	//设置词性
 	settextcolor(BLACK);
 	setbkmode(TRANSPARENT);
 	settextstyle(50 * uHeight, 30 * uWidth, "黑体");
 	str[1] = value1;
-	outtextxy(250 * uWidth, 230 * uHeight, str[1]);
+	outtextxy(250 * uWidth, 400 * uHeight, str[1]);
 
 	//设置中文
 	if (bool_chinese == true) {
@@ -151,7 +192,7 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 		setbkmode(TRANSPARENT);
 		settextstyle(100 * uHeight, 50 * uWidth, "黑体");
 		str[2] = value2;
-		outtextxy(250 * uWidth, 350 * uHeight, str[2]);
+		outtextxy(250 * uWidth, 450 * uHeight, str[2]);
 	}
 	//设置遗忘次数
 	settextcolor(BLACK);
@@ -198,10 +239,54 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 	setbkmode(TRANSPARENT);
 	settextstyle(30 * uHeight, 15 * uWidth, "黑体");
 	outtextxy(1100 * uWidth, 605 * uHeight, "%");
+
+	//设置上个单词
+	// 
+	if (last) {
+		settextcolor(BLACK);
+		setbkmode(TRANSPARENT);
+		settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+		outtextxy(700 * uWidth, 190 * uHeight, "上个单词:");
+
+		//设置单词
+		settextcolor(BLACK);
+		setbkmode(TRANSPARENT);
+		settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+		str[6] = refLastWord;
+		outtextxy(840 * uWidth, 190 * uHeight, str[6]);
+
+		//设置词性
+		settextcolor(BLACK);
+		setbkmode(TRANSPARENT);
+		settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+		str[7] = refLastClass;
+		outtextxy(840 * uWidth, 230 * uHeight, str[7]);
+
+		//设置中文
+		settextcolor(BLACK);
+		setbkmode(TRANSPARENT);
+		settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+		str[8] = refLastChinese;
+		outtextxy(900 * uWidth, 230 * uHeight, str[8]);
+
+		//设置是否记忆
+		if (!bool_history) {
+			settextcolor(GREEN);
+			setbkmode(TRANSPARENT);
+			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+			outtextxy(730 * uWidth, 230 * uHeight, "记得");
+		}
+		else {
+			settextcolor(RED);
+			setbkmode(TRANSPARENT);
+			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
+			outtextxy(730 * uWidth, 230 * uHeight, "遗忘");
+		}
+	}
 }
 
 //绘制数据
-void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster) {
+void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster,bool bool_start) {
 	string temp0,temp1,temp2,temp3,temp4;
 	settextcolor(BLACK);
 	setbkmode(TRANSPARENT);
@@ -221,19 +306,38 @@ void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest
 
 	temp4 = to_string(wordMaster);
 	str[4] = temp4.c_str();
-	outtextxy(250 * uWidth, 20 * uHeight, "单词总量:");
-	outtextxy(390 * uWidth, 20 * uHeight, str[0]);
+	outtextxy(250 * uWidth, 30 * uHeight, "单词总量:");
+	outtextxy(390 * uWidth, 30 * uHeight, str[0]);
 
-	outtextxy(480 * uWidth, 20 * uHeight, "已记忆:");
-	outtextxy(590 * uWidth, 20 * uHeight, str[1]);
+	outtextxy(250 * uWidth, 85 * uHeight, "已记忆:");
+	outtextxy(390 * uWidth, 85 * uHeight, str[1]);
 
-	outtextxy(680 * uWidth, 20 * uHeight, "还需记忆:");
-	outtextxy(820 * uWidth, 20 * uHeight, str[2]);
+	outtextxy(250 * uWidth, 190 * uHeight, "还需记忆:");
+	outtextxy(400 * uWidth, 190 * uHeight, str[2]);
 
-	outtextxy(250 * uWidth, 50 * uHeight, "学习剩余:");
-	outtextxy(390 * uWidth, 50 * uHeight, str[3]);
+	if (bool_start == true) 
+	{
+		outtextxy(250 * uWidth, 230 * uHeight, "学习剩余:");
+		outtextxy(400 * uWidth, 230 * uHeight, str[3]);
+	}
 
-	outtextxy(480 * uWidth, 50 * uHeight, "已掌握:");
-	outtextxy(590 * uWidth, 50 * uHeight, str[4]);
+	outtextxy(250 * uWidth, 135 * uHeight, "已掌握:");
+	outtextxy(390 * uWidth, 135 * uHeight, str[4]);
+
+}
+
+//绘制数据统计图
+void drawStatusGraph(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster) {
+	float rateMemory = (float)wordMemory/(float)wordAmount;
+	float rateMaster = (float)wordMaster/(float)wordAmount;
+	setfillcolor(0x2079F4);
+	setlinecolor(0x2079F4);
+	fillrectangle(480*uWidth, 20*uHeight, 1250*uWidth, 70*uHeight);
+	setfillcolor(0x988FF5);
+	setlinecolor(0x988FF5);
+	fillrectangle(480 * uWidth, 71 * uHeight, 480 * uWidth+rateMemory*770*uWidth, 120 * uHeight);
+	setfillcolor(0x280284);
+	setlinecolor(0x280284);
+	fillrectangle(480 * uWidth, 121 * uHeight, 480 * uWidth + rateMaster * 770 * uWidth, 170 * uHeight);
 
 }

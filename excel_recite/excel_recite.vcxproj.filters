@@ -21,12 +21,18 @@
     <ClCompile Include="ui.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="logic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ui.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="logic.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
