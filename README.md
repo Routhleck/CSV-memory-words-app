@@ -1,4 +1,4 @@
-# CSV背单词v0.4
+# CSV背单词v0.5
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -97,6 +97,10 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 
 将上两步操作合并在一起，便于取消上个单词的误操作
 
+##源码文件更改
+
+新增ui.cpp和ui.h以增加代码可读性
+
 # V0.4
 
 ##问题修复
@@ -116,3 +120,25 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 ###统计图表
 
 ![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.4/img-folder/1645626102(1).jpg)
+
+# V0.5
+
+##问题修复
+
+修复一些之前没有注意到的致命性问题
+
+##更新界面显示
+
+###DPI缩放优化
+
+现在可以根据显示器的dpi缩放进行分辨率调整，将不会有分辨率损失
+
+###上一个单词显示
+
+可以显示上一个记忆的单词信息
+
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.5/img-folder/v0.5.png)
+
+##源码文件更改
+
+新增logic.cpp和logic.h以增加代码可读性
