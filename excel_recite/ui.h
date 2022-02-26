@@ -30,14 +30,15 @@ struct button* forget = createButton(10 * uWidth, 620 * uHeight, 200 * uWidth, 5
 struct button* undoMemory = createButton(250 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "撤销记忆");
 struct button* lastWord = createButton(470 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "上个单词");
 struct button* undoMemoryLastWord = createButton(690 * uWidth, 650 * uHeight, 370 * uWidth, 50 * uHeight, 0xACA600, "撤销上个单词记忆");
+struct button* textToSpeech = createButton(500 * uWidth, 190 * uHeight, 180 * uWidth, 65 * uHeight, 0xFFFFE1, "读 音");
 
 double fps();//fps计算
 void drawFps();//fps绘制
 void drawButton(struct button* pB);//画按钮
 bool mouseInButton(struct button* pB, MOUSEMSG m);//判断鼠标是否在按钮中
 bool clickButton(struct button* pB, MOUSEMSG m);//判断鼠标点击按钮
-void drawAllButton();//绘制所有按钮
-void drawMain(bool bool_chinese, char* value0, char* value1, char* value2, int value3, int value4, char* refLastWord, char* refLastClass, char* refLastChinese, bool bool_history, bool last);//绘制主要内容
+void drawAllButton(bool bool_start);//绘制所有按钮
+void drawMain(bool bool_chinese, char* value0, char* value1, char* value2, int value3, int value4, char* refLastWord, char* refLastClass, char* refLastChinese, int bool_history, bool last);//绘制主要内容
 void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster, bool bool_start);//绘制数据
 void drawStatusGraph(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster);//绘制数据图表
 #endif 

@@ -71,6 +71,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 			undoMemoryLastWord->color = 0x928700;
 		else if (pB == reviewPlus)
 			reviewPlus->color = 0xD7D7B9;
+		else if (pB == textToSpeech)
+			textToSpeech->color = 0xD7D7B9;
 
 		return true;
 	}
@@ -100,6 +102,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 		undoMemoryLastWord->color = 0xACA600;
 	else if (pB == reviewPlus)
 		reviewPlus->color = 0xFFFFE1;
+	else if (pB == textToSpeech)
+		textToSpeech->color = 0xFFFFE1;
 	return false;
 }
 //判断鼠标点击按钮
@@ -148,24 +152,29 @@ void drawFps()
 }
 
 //绘制所有按钮
-void drawAllButton() {
+void drawAllButton(bool bool_start) {
 	drawButton(load);
 	drawButton(save);
 	drawButton(exportFile);
 	drawButton(start);
 	drawButton(review);
+	drawButton(reviewPlus);
+	drawButton(musicOn);
+	if(bool_start){
 	drawButton(remember);
 	drawButton(forget);
-	drawButton(musicOn);
 	drawButton(chineseSwitch);
 	drawButton(undoMemory);
 	drawButton(lastWord);
 	drawButton(undoMemoryLastWord);
-	drawButton(reviewPlus);
+	drawButton(textToSpeech);
+	}
+	
+	
 }
 
 //开始记忆时绘制
-void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value3,int value4, char* refLastWord, char* refLastClass, char* refLastChinese, bool bool_history,bool last) {
+void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value3,int value4, char* refLastWord, char* refLastClass, char* refLastChinese, int bool_history,bool last) {
 	LPCSTR str[9];
 	string ForgetTime;
 	string ReviewTime;
@@ -270,13 +279,13 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 		outtextxy(900 * uWidth, 230 * uHeight, str[8]);
 
 		//设置是否记忆
-		if (!bool_history) {
+		if (bool_history == 0) {
 			settextcolor(GREEN);
 			setbkmode(TRANSPARENT);
 			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
 			outtextxy(730 * uWidth, 230 * uHeight, "记得");
 		}
-		else {
+		else if(bool_history == 1) {
 			settextcolor(RED);
 			setbkmode(TRANSPARENT);
 			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
