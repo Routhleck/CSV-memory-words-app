@@ -1,4 +1,4 @@
-# CSV背单词v0.5
+# CSV背单词v0.6
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -142,3 +142,28 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 ## 源码文件更改
 
 新增logic.cpp和logic.h以增加代码可读性
+
+# V0.6
+
+## 问题修复
+
+上一个单词的记忆和遗忘显示bug修复
+
+## 更新功能
+
+### 单词读音
+
+每次学习的单词都会朗读
+
+## 更新按钮功能
+
+###读音
+
+可以朗读当前单词
+
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.6/img-folder/v0.6.png)
+
+## 源码文件更改
+
+添加textToSpeech.h以及textToSpeech.cpp
+使用微软TTF引擎，接入文字转语音API
