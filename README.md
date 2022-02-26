@@ -169,7 +169,7 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 添加textToSpeech.h以及textToSpeech.cpp
 使用微软TTF引擎，接入文字转语音API
 
-#v0.7
+# 0.7
 
 ## 问题修复
 
