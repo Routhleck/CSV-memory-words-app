@@ -11,7 +11,7 @@ using namespace std;
 using namespace Microsoft::CognitiveServices::Speech;
 using namespace Microsoft::CognitiveServices::Speech::Audio;
 
-void ttf(string &word, bool &read);
-void synthesizeSpeech(string &word);
+void ttf(string& word, bool& read);
+void synthesizeSpeech(string& word,bool& read);
 
 #endif
