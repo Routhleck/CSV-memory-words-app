@@ -73,6 +73,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 			reviewPlus->color = 0xD7D7B9;
 		else if (pB == textToSpeech)
 			textToSpeech->color = 0xD7D7B9;
+		else if (pB == loadHistory)
+			loadHistory->color = 0xB69C88;
 
 		return true;
 	}
@@ -104,6 +106,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 		reviewPlus->color = 0xFFFFE1;
 	else if (pB == textToSpeech)
 		textToSpeech->color = 0xFFFFE1;
+	else if (pB == loadHistory)
+		loadHistory->color = 0xDEC4B0;
 	return false;
 }
 //判断鼠标点击按钮
@@ -114,7 +118,6 @@ bool clickButton(struct button* pB, MOUSEMSG m)
 		return true;
 	}
 	return false;
-
 }
 
 double fps() {
@@ -143,7 +146,7 @@ double fps() {
 void drawFps()
 {
 	TCHAR* c_fps = 0;
-	itoa((int)fps(),c_fps,10);
+	_itoa((int)fps(), c_fps, 10);
 	settextcolor(BLACK);
 	setbkmode(TRANSPARENT);
 	settextstyle(20 * uHeight, 10 * uWidth, "黑体");
@@ -160,21 +163,21 @@ void drawAllButton(bool bool_start) {
 	drawButton(review);
 	drawButton(reviewPlus);
 	drawButton(musicOn);
-	if(bool_start){
-	drawButton(remember);
-	drawButton(forget);
-	drawButton(chineseSwitch);
-	drawButton(undoMemory);
-	drawButton(lastWord);
-	drawButton(undoMemoryLastWord);
-	drawButton(textToSpeech);
+	if (bool_start) {
+		drawButton(remember);
+		drawButton(forget);
+		drawButton(chineseSwitch);
+		drawButton(undoMemory);
+		drawButton(lastWord);
+		drawButton(undoMemoryLastWord);
+		drawButton(textToSpeech);
 	}
-	
-	
+	else
+		drawButton(loadHistory);
 }
 
 //开始记忆时绘制
-void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value3,int value4, char* refLastWord, char* refLastClass, char* refLastChinese, int bool_history,bool last) {
+void drawMain(bool bool_chinese, char* value0, char* value1, char* value2, int value3, int value4, char* refLastWord, char* refLastClass, char* refLastChinese, int bool_history, bool last) {
 	LPCSTR str[9];
 	string ForgetTime;
 	string ReviewTime;
@@ -250,7 +253,7 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 	outtextxy(1100 * uWidth, 605 * uHeight, "%");
 
 	//设置上个单词
-	// 
+	//
 	if (last) {
 		settextcolor(BLACK);
 		setbkmode(TRANSPARENT);
@@ -285,7 +288,7 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
 			outtextxy(730 * uWidth, 230 * uHeight, "记得");
 		}
-		else if(bool_history == 1) {
+		else if (bool_history == 1) {
 			settextcolor(RED);
 			setbkmode(TRANSPARENT);
 			settextstyle(30 * uHeight, 15 * uWidth, "黑体");
@@ -295,8 +298,8 @@ void drawMain(bool bool_chinese,char* value0,char* value1,char* value2,int value
 }
 
 //绘制数据
-void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster,bool bool_start) {
-	string temp0,temp1,temp2,temp3,temp4;
+void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster, bool bool_start) {
+	string temp0, temp1, temp2, temp3, temp4;
 	settextcolor(BLACK);
 	setbkmode(TRANSPARENT);
 	settextstyle(30 * uHeight, 15 * uWidth, "等线");
@@ -324,7 +327,7 @@ void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest
 	outtextxy(250 * uWidth, 190 * uHeight, "还需记忆:");
 	outtextxy(400 * uWidth, 190 * uHeight, str[2]);
 
-	if (bool_start == true) 
+	if (bool_start == true)
 	{
 		outtextxy(250 * uWidth, 230 * uHeight, "学习剩余:");
 		outtextxy(400 * uWidth, 230 * uHeight, str[3]);
@@ -332,21 +335,19 @@ void drawStatus(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest
 
 	outtextxy(250 * uWidth, 135 * uHeight, "已掌握:");
 	outtextxy(390 * uWidth, 135 * uHeight, str[4]);
-
 }
 
 //绘制数据统计图
 void drawStatusGraph(int wordAmount, int wordMemory, int wordNeedMemory, int wordRest, int wordMaster) {
-	float rateMemory = (float)wordMemory/(float)wordAmount;
-	float rateMaster = (float)wordMaster/(float)wordAmount;
+	float rateMemory = (float)wordMemory / (float)wordAmount;
+	float rateMaster = (float)wordMaster / (float)wordAmount;
 	setfillcolor(0x2079F4);
 	setlinecolor(0x2079F4);
-	fillrectangle(480*uWidth, 20*uHeight, 1250*uWidth, 70*uHeight);
+	fillrectangle(480 * uWidth, 20 * uHeight, 1250 * uWidth, 70 * uHeight);
 	setfillcolor(0x988FF5);
 	setlinecolor(0x988FF5);
-	fillrectangle(480 * uWidth, 71 * uHeight, 480 * uWidth+rateMemory*770*uWidth, 120 * uHeight);
+	fillrectangle(480 * uWidth, 71 * uHeight, 480 * uWidth + rateMemory * 770 * uWidth, 120 * uHeight);
 	setfillcolor(0x280284);
 	setlinecolor(0x280284);
 	fillrectangle(480 * uWidth, 121 * uHeight, 480 * uWidth + rateMaster * 770 * uWidth, 170 * uHeight);
-
 }

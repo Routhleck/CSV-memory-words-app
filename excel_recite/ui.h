@@ -7,8 +7,8 @@
 using namespace std;
 float Width = GetSystemMetrics(SM_CXSCREEN);
 float Height = GetSystemMetrics(SM_CYSCREEN);
-float uWidth = (Width / 1920)*1.2;
-float uHeight = (Height / 1080)*1.2;
+float uWidth = (Width / 1920) * 1.2;
+float uHeight = (Height / 1080) * 1.2;
 
 //按钮
 struct button;
@@ -20,13 +20,14 @@ struct button* createButton(int x, int y, int width, int height, COLORREF color,
 struct button* load = createButton(10 * uWidth, 10 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "加载csv");
 struct button* save = createButton(10 * uWidth, 70 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "保存文件");
 struct button* exportFile = createButton(10 * uWidth, 130 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "导出文件");
-struct button* musicOn = createButton(10 * uWidth, 200 * uHeight, 200 * uWidth, 50 * uHeight, 0x3366ff, "振作起来");
-struct button* start = createButton(10 * uWidth, 300 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "开始记忆");
-struct button* reviewPlus = createButton(10 * uWidth, 360 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "优化复习");
-struct button* review = createButton(10 * uWidth, 420 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "复习本轮");
-struct button* chineseSwitch = createButton(10 * uWidth, 500 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "释义显示");
-struct button* remember = createButton(10 * uWidth, 560 * uHeight, 200 * uWidth, 50 * uHeight, 0x32CD32, "记    得");
-struct button* forget = createButton(10 * uWidth, 620 * uHeight, 200 * uWidth, 50 * uHeight, 0x3C14DC, "遗    忘");
+struct button* loadHistory = createButton(10 * uWidth, 190 * uHeight, 200 * uWidth, 50 * uHeight, 0xDEC4B0, "加载历史");
+struct button* musicOn = createButton(10 * uWidth, 250 * uHeight, 200 * uWidth, 50 * uHeight, 0x3366ff, "振作起来");
+struct button* start = createButton(10 * uWidth, 320 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "开始记忆");
+struct button* reviewPlus = createButton(10 * uWidth, 380 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "优化复习");
+struct button* review = createButton(10 * uWidth, 440 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "复习本轮");
+struct button* chineseSwitch = createButton(10 * uWidth, 520 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "释义显示");
+struct button* remember = createButton(10 * uWidth, 580 * uHeight, 200 * uWidth, 50 * uHeight, 0x32CD32, "记    得");
+struct button* forget = createButton(10 * uWidth, 640 * uHeight, 200 * uWidth, 50 * uHeight, 0x3C14DC, "遗    忘");
 struct button* undoMemory = createButton(250 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "撤销记忆");
 struct button* lastWord = createButton(470 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "上个单词");
 struct button* undoMemoryLastWord = createButton(690 * uWidth, 650 * uHeight, 370 * uWidth, 50 * uHeight, 0xACA600, "撤销上个单词记忆");
