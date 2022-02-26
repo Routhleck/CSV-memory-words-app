@@ -1,4 +1,4 @@
-# CSV背单词v0.6
+# CSV背单词v0.7
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -6,7 +6,8 @@ bug反馈请私信~
 
 excel模板是example.xlsx
 
-![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.5/img-folder/new.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.7/img-folder/v0.7_1.png)
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.7/img-folder/v0.7_2.png)
 
 # V0.1
 
