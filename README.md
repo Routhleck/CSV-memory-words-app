@@ -167,3 +167,19 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 
 添加textToSpeech.h以及textToSpeech.cpp
 使用微软TTF引擎，接入文字转语音API
+
+#v0.7
+
+## 问题修复
+
+调用微软TTF API时，没有反应，需要用户联网，现在会持续与api建立连接，直到语音实现
+
+## 更新按钮功能
+
+###加载历史
+
+现在可以实时保存用户的操作记录至data.dat文件中，若发生闪退等情况退出应用，点击此按钮便可直接读取上次未完成的记忆
+注：在记忆时无法进行该操作
+
+![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.7/img-folder/v0.7.png)
+
