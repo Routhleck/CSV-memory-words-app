@@ -156,12 +156,8 @@ void drawFps()
 
 //绘制所有按钮
 void drawAllButton(bool bool_start) {
-	drawButton(load);
-	drawButton(save);
-	drawButton(exportFile);
-	drawButton(start);
-	drawButton(review);
-	drawButton(reviewPlus);
+
+	
 	drawButton(musicOn);
 	if (bool_start) {
 		drawButton(remember);
@@ -172,8 +168,15 @@ void drawAllButton(bool bool_start) {
 		drawButton(undoMemoryLastWord);
 		drawButton(textToSpeech);
 	}
-	else
+	else {
+		drawButton(load);
+		drawButton(save);
+		drawButton(exportFile);
 		drawButton(loadHistory);
+		drawButton(start);
+		drawButton(review);
+		drawButton(reviewPlus);
+	}
 }
 
 //开始记忆时绘制

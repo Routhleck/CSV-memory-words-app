@@ -85,7 +85,7 @@ public:
 	static void rememberWord(int& npos, vector<Word>& words, bool& bool_stop, bool& bool_optimize, bool& bool_start, bool& bool_end, int& amount,int& lastPos);
 	static void forgetWord(int& npos, vector<Word>& words, bool& bool_stop, bool& bool_optimize, bool& bool_start, bool& bool_end, int& amount,int& lastPos);
 	static void playMusic(bool& lerp, string& musicPath);
-	static void undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npos);
+	static void undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npos,int& amount);
 	static void reviewOptimize(int& npos, vector<Word>& words, vector<Word>::iterator& iter, int& amount, int& wordMaster, bool& bool_start, bool& bool_end, bool& bool_chinese, bool& bool_optimize); 
 	static void clearHistory();
 	static void saveHistory(int choice);

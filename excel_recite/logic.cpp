@@ -62,7 +62,7 @@ void logic::calculateStatus(int& amount, vector<Word>& tempWords, vector<Word>& 
 	//单词记忆数量
 	//单词未记忆数量
 	//当前一轮学习量剩余
-	//(记忆次数-遗忘次数)/(记忆次数+1)大于70%的单词数量
+	//(记忆次数-遗忘次数)/(记忆次数+1)大于55%的单词数量
 	if (amount < 0)
 		amount = 0;
 	tempWords = words;
@@ -79,7 +79,7 @@ void logic::calculateStatus(int& amount, vector<Word>& tempWords, vector<Word>& 
 
 	if (iter._Ptr != nullptr) {
 		while (iter->ReviewTime != 0) {
-			if (((float)(iter->ReviewTime - iter->ForgetTime) / (float)(iter->ReviewTime + 1)) > 0.7) {
+			if (((float)(iter->ReviewTime - iter->ForgetTime) / (float)(iter->ReviewTime + 1)) > 0.55) {
 				wordMaster++;
 			}
 			iter++;
@@ -234,7 +234,7 @@ void logic::rememberWord(int& npos, vector<Word>& words, bool& bool_stop, bool& 
 			{
 				npos++;
 				while (words[npos].ReviewTime != 0 && bool_stop == false) {
-					if (((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1)) > 0.7) {
+					if (((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1)) > 0.55) {
 						npos++;
 					}
 					else {
@@ -273,7 +273,7 @@ void logic::forgetWord(int& npos, vector<Word>& words, bool& bool_stop, bool& bo
 			{
 				npos++;
 				while (words[npos].ReviewTime != 0 && bool_stop == false) {
-					if (((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1)) > 0.7) {
+					if (((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1)) > 0.55) {
 						npos++;
 					}
 					else {
@@ -309,7 +309,7 @@ void logic::playMusic(bool& lerp, string& musicPath)
 		PlaySound(NULL, NULL, SND_FILENAME | SND_ASYNC);
 }
 
-void logic::undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npos)
+void logic::undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npos,int& amount)
 {
 	if (bool_start == true && bool_end == false && words[npos].ReviewTime != 0&&!words[npos].History.empty()) {
 		if (words[npos].History.back() == 0) {
@@ -321,6 +321,7 @@ void logic::undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npo
 			words[npos].ReviewTime--;
 			words[npos].History.pop_back();
 		}
+		amount++;
 	}
 }
 
@@ -407,7 +408,7 @@ void logic::readHistory(int& npos, vector<Word>& words, vector<Word>::iterator& 
 			logic::forgetWord(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount, lastPos);
 			break;
 		case 5:
-			logic::undo(bool_start, bool_end, words, npos);
+			logic::undo(bool_start, bool_end, words, npos,amount);
 			break;
 		case 6:
 			if (npos > 0)
@@ -416,7 +417,7 @@ void logic::readHistory(int& npos, vector<Word>& words, vector<Word>::iterator& 
 		case 7:
 			if (npos > 0) {
 				npos--;
-				logic::undo(bool_start, bool_end, words, npos);
+				logic::undo(bool_start, bool_end, words, npos,amount);
 			}
 			break;
 		}

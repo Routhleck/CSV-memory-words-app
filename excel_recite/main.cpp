@@ -46,10 +46,10 @@ int main() {
 	vector<Word> tempWords;
 	vector<Word>::iterator iter;
 	vector<int> history;
+	shared_ptr<Microsoft::CognitiveServices::Speech::SpeechConfig> config;
 
-	thread thread_ttf(ttf, ref(tempText), ref(read));
+	setConfig(config);
 
-	thread_ttf.detach();
 	//自动读取文件
 	logic::autoLoad(path, words, history);
 	
@@ -119,65 +119,11 @@ int main() {
 		//获取光标
 		MOUSEMSG m = GetMouseMsg();
 
-		//1加载文件
-		if (clickButton(load, m))
-		{
-			logic::manualLoad(path, words, history);
-		}
-
-		//3保存文件
-		if (clickButton(save, m))
-		{
-			logic::saveFile(words, path);
-		}
-
-		//4导出文件
-		if (clickButton(exportFile, m))
-		{
-			logic::exportCsv(words, path);
-		}
-
-		//5开始记忆
-		if (clickButton(start, m))
-		{
-			logic::clearHistory();
-			logic::saveHistory(0);
-			logic::startMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
-			if (amount >= 0) {
-				read = true;
-				thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
-				thread_ttf.detach();
-			}
-		}
-
-		//6复习本轮
-		if (clickButton(review, m))
-		{
-			logic::clearHistory();
-			logic::saveHistory(2);
-			logic::reviewMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
-			if (amount >= 0) {
-				read = true;
-				thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
-				thread_ttf.detach();
-			}
-		}
+		
 
 		//9音乐
 		if (clickButton(musicOn, m)) {
 			logic::playMusic(lerp, musicPath);
-		}
-
-		//13优化复习
-		if (clickButton(reviewPlus, m)) {
-			logic::clearHistory();
-			logic::saveHistory(1);
-			logic::reviewOptimize(npos, words, iter, amount, wordMaster, bool_start, bool_end, bool_chinese, bool_optimize);
-			if (amount >= 0) {
-				read = true;
-				thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
-				thread_ttf.detach();
-			}
 		}
 
 		//7记得
@@ -188,7 +134,7 @@ int main() {
 				logic::rememberWord(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount,lastPos);
 				if (amount >= 0) {
 					read = true;
-					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
 					thread_ttf.detach();
 				}
 			}
@@ -200,7 +146,7 @@ int main() {
 				logic::forgetWord(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount, lastPos);
 				if (amount >= 0) {
 					read = true;
-					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
 					thread_ttf.detach();
 				}
 			}
@@ -208,7 +154,7 @@ int main() {
 			//10撤销记忆
 			if (clickButton(undoMemory, m)) {
 				logic::saveHistory(5);
-				logic::undo(bool_start, bool_end, words, npos);
+				logic::undo(bool_start, bool_end, words, npos,amount);
 			}
 
 			//11上个单词
@@ -223,14 +169,14 @@ int main() {
 				if (npos > 0) {
 					logic::saveHistory(7);
 					npos--;
-					logic::undo(bool_start, bool_end, words, npos);
+					logic::undo(bool_start, bool_end, words, npos,amount);
 				}
 			}
 
 			//14读音
 			if (clickButton(textToSpeech, m)) {
 				read = true;
-				thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read));
+				thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
 				thread_ttf.detach();
 			}
 
@@ -242,9 +188,68 @@ int main() {
 			}
 		}
 		else {
+
+
+
 			//15加载历史
 			if (clickButton(loadHistory, m)) {
 				logic::readHistory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos, wordMaster, bool_optimize, lastPos, bool_stop);
+			}
+
+			//1加载文件
+			if (clickButton(load, m))
+			{
+				logic::manualLoad(path, words, history);
+			}
+
+			//3保存文件
+			if (clickButton(save, m))
+			{
+				logic::saveFile(words, path);
+			}
+
+			//4导出文件
+			if (clickButton(exportFile, m))
+			{
+				logic::exportCsv(words, path);
+			}
+
+			//5开始记忆
+			if (clickButton(start, m))
+			{
+				logic::clearHistory();
+				logic::saveHistory(0);
+				logic::startMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
+				if (amount >= 0) {
+					read = true;
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+					thread_ttf.detach();
+				}
+			}
+
+			//6复习本轮
+			if (clickButton(review, m))
+			{
+				logic::clearHistory();
+				logic::saveHistory(2);
+				logic::reviewMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
+				if (amount >= 0) {
+					read = true;
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+					thread_ttf.detach();
+				}
+			}
+
+			//13优化复习
+			if (clickButton(reviewPlus, m)) {
+				logic::clearHistory();
+				logic::saveHistory(1);
+				logic::reviewOptimize(npos, words, iter, amount, wordMaster, bool_start, bool_end, bool_chinese, bool_optimize);
+				if (amount >= 0) {
+					read = true;
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+					thread_ttf.detach();
+				}
 			}
 		}
 
