@@ -1,4 +1,4 @@
-# CSV背单词v0.7
+# CSV背单词v0.7.1
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -189,5 +189,8 @@ amount数量将会随撤销相应增加
 注：在记忆时无法进行该操作
 
 ![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.7/img-folder/v0.7.png)
+
+
+
 
 
