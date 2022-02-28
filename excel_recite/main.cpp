@@ -21,6 +21,7 @@ int main() {
 	bool bool_optimize = false;
 	bool bool_stop = false;
 	bool read = false;
+	bool bool_wordEmpty = true;
 	int amount = 0;
 	int npos = 0;
 	int correct = 0;
@@ -59,8 +60,13 @@ int main() {
 		BeginBatchDraw();
 		setfillcolor(0xE16941);
 		fillrectangle(0, 0, 1280 * uWidth, 720 * uHeight);
+
+		//检测是否加载完成
+		bool_wordEmpty = words.empty();
+
 		//绘制按钮
-		drawAllButton(bool_start);
+		drawAllButton(bool_start,bool_wordEmpty);
+
 
 		//性能数据统计
 		//drawFps();
@@ -180,7 +186,14 @@ int main() {
 				thread_ttf.detach();
 			}
 
-			
+			//15退出记忆
+			if (clickButton(exitMemory, m)) {
+
+				bool_start = false;
+				bool_end = true;
+				bool_optimize = false;
+
+			}
 
 			//中文释义开关
 			if (clickButton(chineseSwitch, m)) {
@@ -213,42 +226,43 @@ int main() {
 			{
 				logic::exportCsv(words, path);
 			}
-
-			//5开始记忆
-			if (clickButton(start, m))
-			{
-				logic::clearHistory();
-				logic::saveHistory(0);
-				logic::startMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
-				if (amount >= 0) {
-					read = true;
-					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
-					thread_ttf.detach();
+			if (!bool_wordEmpty) {
+				//5开始记忆
+				if (clickButton(start, m))
+				{
+					logic::clearHistory();
+					logic::saveHistory(0);
+					logic::startMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
+					if (amount >= 0) {
+						read = true;
+						thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+						thread_ttf.detach();
+					}
 				}
-			}
 
-			//6复习本轮
-			if (clickButton(review, m))
-			{
-				logic::clearHistory();
-				logic::saveHistory(2);
-				logic::reviewMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
-				if (amount >= 0) {
-					read = true;
-					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
-					thread_ttf.detach();
+				//6复习本轮
+				if (clickButton(review, m))
+				{
+					logic::clearHistory();
+					logic::saveHistory(2);
+					logic::reviewMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
+					if (amount >= 0) {
+						read = true;
+						thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+						thread_ttf.detach();
+					}
 				}
-			}
 
-			//13优化复习
-			if (clickButton(reviewPlus, m)) {
-				logic::clearHistory();
-				logic::saveHistory(1);
-				logic::reviewOptimize(npos, words, iter, amount, wordMaster, bool_start, bool_end, bool_chinese, bool_optimize);
-				if (amount >= 0) {
-					read = true;
-					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
-					thread_ttf.detach();
+				//13优化复习
+				if (clickButton(reviewPlus, m)) {
+					logic::clearHistory();
+					logic::saveHistory(1);
+					logic::reviewOptimize(npos, words, iter, amount, wordMaster, bool_start, bool_end, bool_chinese, bool_optimize);
+					if (amount >= 0) {
+						read = true;
+						thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+						thread_ttf.detach();
+					}
 				}
 			}
 		}
