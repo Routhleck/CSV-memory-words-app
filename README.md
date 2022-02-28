@@ -1,6 +1,7 @@
 # CSV背单词v0.8
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
+
 v0.7新功能展示: https://www.bilibili.com/video/av466841462
 
 bug反馈请私信~
