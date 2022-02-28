@@ -1,4 +1,4 @@
-# CSV背单词v0.7.1
+# CSV背单词v0.7
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
