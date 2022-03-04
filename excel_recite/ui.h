@@ -31,7 +31,7 @@ struct button* forget = createButton(10 * uWidth, 640 * uHeight, 200 * uWidth, 5
 struct button* undoMemory = createButton(250 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "撤销记忆");
 struct button* lastWord = createButton(470 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "上个单词");
 struct button* undoMemoryLastWord = createButton(690 * uWidth, 650 * uHeight, 370 * uWidth, 50 * uHeight, 0xACA600, "撤销上个单词记忆");
-struct button* textToSpeech = createButton(500 * uWidth, 190 * uHeight, 180 * uWidth, 65 * uHeight, 0xFFFFE1, "读 音");
+struct button* textToSpeech = createButton(10 * uWidth, 460 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "读    音");
 struct button* exitMemory = createButton(10 * uWidth, 320 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "退出记忆");
 
 double fps();//fps计算

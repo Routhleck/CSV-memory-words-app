@@ -219,6 +219,7 @@ int main() {
 			if (clickButton(save, m))
 			{
 				logic::saveFile(words, path);
+				logic::clearHistory();
 			}
 
 			//4导出文件
@@ -230,7 +231,6 @@ int main() {
 				//5开始记忆
 				if (clickButton(start, m))
 				{
-					logic::clearHistory();
 					logic::saveHistory(0);
 					logic::startMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
 					if (amount >= 0) {
@@ -243,7 +243,6 @@ int main() {
 				//6复习本轮
 				if (clickButton(review, m))
 				{
-					logic::clearHistory();
 					logic::saveHistory(2);
 					logic::reviewMemory(npos, words, iter, amount, bool_start, bool_end, bool_chinese, startPos);
 					if (amount >= 0) {
@@ -255,7 +254,6 @@ int main() {
 
 				//13优化复习
 				if (clickButton(reviewPlus, m)) {
-					logic::clearHistory();
 					logic::saveHistory(1);
 					logic::reviewOptimize(npos, words, iter, amount, wordMaster, bool_start, bool_end, bool_chinese, bool_optimize);
 					if (amount >= 0) {
