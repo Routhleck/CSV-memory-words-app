@@ -1,4 +1,4 @@
-# CSV背单词v0.8
+# CSV背单词v0.9
 
 视频教程：https://www.bilibili.com/video/BV1PP4y1A77a
 
@@ -171,7 +171,7 @@ csv格式文件说明：共5列，每行元素依次为单词，词性，释义�
 添加textToSpeech.h以及textToSpeech.cpp
 使用微软TTF引擎，接入文字转语音API
 
-# 0.7
+# V0.7
 
 ## 问题修复
 
@@ -192,7 +192,7 @@ amount数量将会随撤销相应增加
 
 ![Image text](https://raw.githubusercontent.com/Routhleck/CSVrecite/v0.7/img-folder/v0.7.png)
 
-# 0.8
+# V0.8
 
 ## 按钮显示更新
 
@@ -205,4 +205,12 @@ amount数量将会随撤销相应增加
 进入记忆模式后，不会显示<加载csv><保存文件><导出文件><开始记忆><优化复习><复习本轮><加载历史>这7个按钮，当记忆完成或点击<退出按钮>后，才会显示
 
 
+# V0.9
 
+## 问题修复
+
+现在微软的文字转语音api可以持续调用工作
+
+## 按钮显示更新
+
+读音按钮的位置发生了变化
