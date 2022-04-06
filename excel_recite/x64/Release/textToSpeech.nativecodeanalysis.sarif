@@ -1,0 +1,1372 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Result_Reason”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_result.h"
+                },
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 27,
+                  "endLine": 141,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?PopulateResultFields@RecognitionResult@Speech@CognitiveServices@Microsoft@@AEAAXPEAU_azac_empty@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4ResultReason@234@1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Result_CancellationReason”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_result.h"
+                },
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 35,
+                  "endLine": 230,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?GetCancellationReason@CancellationDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4CancellationReason@234@PEAVRecognitionResult@234@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Result_CancellationErrorCode”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_result.h"
+                },
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 38,
+                  "endLine": 240,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?GetCancellationErrorCode@CancellationDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4CancellationErrorCode@234@PEAVRecognitionResult@234@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Result_NoMatchReason”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_result.h"
+                },
+                "region": {
+                  "startLine": 299,
+                  "startColumn": 30,
+                  "endLine": 299,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?GetNoMatchReason@NoMatchDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4NoMatchReason@234@PEAVRecognitionResult@234@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Stream_Status”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_data_stream.h"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 23,
+                  "endLine": 106,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?GetStatus@AudioDataStream@Speech@CognitiveServices@Microsoft@@QEAA?AW4StreamStatus@234@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“Synthesis_VoiceType”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_info.h"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 29,
+                  "endLine": 82,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0VoiceInfo@Speech@CognitiveServices@Microsoft@@QEAA@PEAU_azac_empty@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00C4C1B0 -il C:\\Users\\13107\\AppData\\Local\\Temp\\_CL_5a67924east -typedil -f textToSpeech.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I H:\\excel背单词\\excel_recite\\packages\\Microsoft.CognitiveServices.Speech.1.20.0\\build\\..\\build\\native\\include\\cxx_api -I H:\\excel背单词\\excel_recite\\packages\\Microsoft.CognitiveServices.Speech.1.20.0\\build\\..\\build\\native\\include\\c_api -nologo -W 3 -diagnostics:column -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DNDEBUG -D_CONSOLE -DWIN32 -D_MBCS -EHs -D_CPPUNWIND -EHc -MT -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive -Zc:wchar_t -Zc:forScope -Fox64\\Release\\textToSpeech.obj -Fdx64\\Release\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory H:\\excel背单词\\excel_recite\\excel_recite -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -wd 4430 -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I Include\\um -I Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "66612827f7cc3a0e6d7ded796d03ac18"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/excel_recite/ui.h"
+          },
+          "hashes": {
+            "md5": "435fcf40b96d61cb63e3ab8afcaa41e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/graphics.h"
+          },
+          "hashes": {
+            "md5": "460de354441b2fe56a9423d4e85a65f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/easyx.h"
+          },
+          "hashes": {
+            "md5": "75bc84f2e5dc66c193cfd3e0a2510d84"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_result.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "20da79933e9c3ad02773b1489ce5bd72"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_data_stream.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "11c36e56f8ea1f825a260e9aa695644c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///H:/excel背单词/excel_recite/packages/Microsoft.CognitiveServices.Speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_info.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "dc021912e39b3c07af648d3a524414c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/excel_recite/texttospeech.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "f9848e00990721324c12b9fbc0ae7a21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/excel_recite/texttospeech.h"
+          },
+          "hashes": {
+            "md5": "a6c24357006f6f84d891fc0b8fe1dc18"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx.h"
+          },
+          "hashes": {
+            "md5": "2aa90a4d6a001855b3ab92c59e61157f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_common.h"
+          },
+          "hashes": {
+            "md5": "a91dfb5b26fa69efdbf97347ea3aa986"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_common.h"
+          },
+          "hashes": {
+            "md5": "681d3af96cae52e8f75ecc9e882239ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/spxdebug.h"
+          },
+          "hashes": {
+            "md5": "4e18c660ebad43ea089ccdeb116a53e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/azac_debug.h"
+          },
+          "hashes": {
+            "md5": "2721aaf5d87b6e7c5d9dab9ab8c24e29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/azac_error.h"
+          },
+          "hashes": {
+            "md5": "1aca4a487e0b6926703e574b50d3a757"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/azac_api_c_common.h"
+          },
+          "hashes": {
+            "md5": "f3e512e194b08972001d023565bc8f44"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/azac_api_c_diagnostics.h"
+          },
+          "hashes": {
+            "md5": "a493ac3d81f1f5623c3064fe632cd29d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/azac_api_c_error.h"
+          },
+          "hashes": {
+            "md5": "103a0d117f1869b942af21595d652e86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/spxerror.h"
+          },
+          "hashes": {
+            "md5": "ce8567f164deb20e0d12c2d045cd9315"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_error.h"
+          },
+          "hashes": {
+            "md5": "913576d251e1d2f5dcba89877a906be6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/azac_api_cxx_common.h"
+          },
+          "hashes": {
+            "md5": "52c3c89f9cd5911a2380aa20eecad8f5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_string_helpers.h"
+          },
+          "hashes": {
+            "md5": "57edcb813a7476033eb4fbe912683ec4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_property_bag.h"
+          },
+          "hashes": {
+            "md5": "70e4dda6b2b926fd8d957c703e65abb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_smart_handle.h"
+          },
+          "hashes": {
+            "md5": "1431065283214029702bc9bd44f0da96"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_properties.h"
+          },
+          "hashes": {
+            "md5": "23cbed73435fa181682f76d9e5a50b99"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_enums.h"
+          },
+          "hashes": {
+            "md5": "c5f9002fce45603396e1f6a59c92917d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_session.h"
+          },
+          "hashes": {
+            "md5": "e73406865209b81b0cdf9dbdac27027d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_config.h"
+          },
+          "hashes": {
+            "md5": "39aba0952f1635a6f809d2ff8532b8c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_speech_config.h"
+          },
+          "hashes": {
+            "md5": "a195c2dcff477df7c97fa8070bfc51dd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_stream_format.h"
+          },
+          "hashes": {
+            "md5": "003eb15d58c835495785a65d1c064565"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_audio_stream_format.h"
+          },
+          "hashes": {
+            "md5": "7910216198181be4e1f4548789125bcd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_stream.h"
+          },
+          "hashes": {
+            "md5": "f115619efb4b6e07f047c9f90e4887ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_audio_stream.h"
+          },
+          "hashes": {
+            "md5": "c66d0363fa16eecb182c7fc5a91cdae7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_result.h"
+          },
+          "hashes": {
+            "md5": "48146196ca1cdd321d0f87dc3efb2919"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_embedded_speech_config.h"
+          },
+          "hashes": {
+            "md5": "e9351379727a90d0432be5896dea5e26"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_recognition_model.h"
+          },
+          "hashes": {
+            "md5": "af733ac10fc020516f436c66c6d6d997"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_speech_recognition_model.h"
+          },
+          "hashes": {
+            "md5": "11e399fe72331495a1775df3f0775a4a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_embedded_speech_config.h"
+          },
+          "hashes": {
+            "md5": "9c20c18038c58348288c7542e9c005e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_config.h"
+          },
+          "hashes": {
+            "md5": "2825f4ce82bcf65104a476ad5b0debb3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_audio_processing_options.h"
+          },
+          "hashes": {
+            "md5": "6bc59bf4f28b8bba3a4fa8042ff5ca91"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_audio_processing_options.h"
+          },
+          "hashes": {
+            "md5": "547947952247da5230a4ec5fd7416bd1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_audio_config.h"
+          },
+          "hashes": {
+            "md5": "aeed5000dec1749df7e1964304f7c17e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_eventargs.h"
+          },
+          "hashes": {
+            "md5": "767ecbd685e2e5be9a91387796eb6dd3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_eventsignal.h"
+          },
+          "hashes": {
+            "md5": "b309178fee21d78763e9922a743f5676"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_eventsignalbase.h"
+          },
+          "hashes": {
+            "md5": "c140a5c4cf380c06a172c03fc367ecb7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_session_eventargs.h"
+          },
+          "hashes": {
+            "md5": "4b86070ee232e8618fc50d27012ab566"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_recognizer.h"
+          },
+          "hashes": {
+            "md5": "dd1b08c82c3a8ace1c8c80fea12d2ee4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_eventargs.h"
+          },
+          "hashes": {
+            "md5": "e6f7a8555316072b97bcb72265f89e76"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_async_recognizer.h"
+          },
+          "hashes": {
+            "md5": "9a4b96d997cb4f6c52f89d812dc787cd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognizer.h"
+          },
+          "hashes": {
+            "md5": "a143b813016a53b30f1b97d180a40ca0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_keyword_recognition_model.h"
+          },
+          "hashes": {
+            "md5": "e706678aec01f9a1199f4eef1a755510"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_keyword_recognition_model.h"
+          },
+          "hashes": {
+            "md5": "4d000e2e57656d3b1df11cda8b54036c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_recognition_base_async_recognizer.h"
+          },
+          "hashes": {
+            "md5": "bfdfb3ae8a53f9bad2f6f690dcf64bfb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_recognition_result.h"
+          },
+          "hashes": {
+            "md5": "d7c3dab82698a7c7ea196b687c4454a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c.h"
+          },
+          "hashes": {
+            "md5": "16af3eecd2892cb1ca461895ae95a661"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_diagnostics.h"
+          },
+          "hashes": {
+            "md5": "3b6327a045ce9db30a08247cfed7acb8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_intent_result.h"
+          },
+          "hashes": {
+            "md5": "90ee516da8ea3ecb0360e1260cb9e28c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_intent_trigger.h"
+          },
+          "hashes": {
+            "md5": "a69732240f8aabc12cefaca5d9987116"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_intent_recognizer.h"
+          },
+          "hashes": {
+            "md5": "5a8f6160539fea4f00309f25a0eeb1d1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_translation_result.h"
+          },
+          "hashes": {
+            "md5": "8c760d460e1ebc5dc9053aa0358becfa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_translation_recognizer.h"
+          },
+          "hashes": {
+            "md5": "b5d03fdf1a9f083dc3c37199cec68935"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_pattern_matching_model.h"
+          },
+          "hashes": {
+            "md5": "723dbd3a460534d5b2103974f7e9954d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_language_understanding_model.h"
+          },
+          "hashes": {
+            "md5": "f37e38d6b36789f40ee96ed73311fa41"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_speech_translation_config.h"
+          },
+          "hashes": {
+            "md5": "f25a36205ba7a7d38c2bf288022f1a63"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_factory.h"
+          },
+          "hashes": {
+            "md5": "a2653e081685cab3919c688892c989f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_synthesizer.h"
+          },
+          "hashes": {
+            "md5": "e6992c3ee5ab43d05c232bb316378728"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_connection.h"
+          },
+          "hashes": {
+            "md5": "21e8e060081ec08dd3c461d637435492"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_grammar.h"
+          },
+          "hashes": {
+            "md5": "521f630b62fc83215294b9b1be14004b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_dialog_service_config.h"
+          },
+          "hashes": {
+            "md5": "4c418a275c96e1a3b082259c80a917bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_dialog_service_connector.h"
+          },
+          "hashes": {
+            "md5": "e0c3a94319cb2bed55fda2c675ae0d9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_conversation.h"
+          },
+          "hashes": {
+            "md5": "7e48bcba17d55523434b47c20e0a8929"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_conversation_transcription_result.h"
+          },
+          "hashes": {
+            "md5": "bb743abd9cddfeac8343cc48d78355db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_user.h"
+          },
+          "hashes": {
+            "md5": "e191277776fc02ebb7ec03326a9ffda7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_participant.h"
+          },
+          "hashes": {
+            "md5": "048b78bd68b87ae10d9f492e049b466b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_conversation_translator.h"
+          },
+          "hashes": {
+            "md5": "e5b9f071adac635da93740134871b1ce"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_ext_audiocompression.h"
+          },
+          "hashes": {
+            "md5": "a821f285bfae509cc6be8d4bf71e7023"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_speaker_recognition.h"
+          },
+          "hashes": {
+            "md5": "2eb2557f72a9fe548bb1a9bebfdbfced"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_pronunciation_assessment_config.h"
+          },
+          "hashes": {
+            "md5": "0b5d76cc223746c543260d3347a54c58"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_recognition_eventargs.h"
+          },
+          "hashes": {
+            "md5": "95c56b5fd052e8ecfb0ce44da7ba2264"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_recognizer.h"
+          },
+          "hashes": {
+            "md5": "fccdc17a2a090bc736a5fc559a0c0c54"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_auto_detect_source_lang_config.h"
+          },
+          "hashes": {
+            "md5": "b2c9b6b54fdaa13ec0907606f3546190"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_utils.h"
+          },
+          "hashes": {
+            "md5": "dc021a15fb2ea4ad3de86ffd847ee8f0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_auto_detect_source_lang_config.h"
+          },
+          "hashes": {
+            "md5": "277976d837af5b411a92c245c9edf960"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_source_lang_config.h"
+          },
+          "hashes": {
+            "md5": "658b79777a45198eb1277fbedfea92fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_source_lang_config.h"
+          },
+          "hashes": {
+            "md5": "743cebd5dd249a07fd49f0a6f529db0e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_intent_recognition_result.h"
+          },
+          "hashes": {
+            "md5": "3c47758aac8bbe63182e8231328d84f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_json.h"
+          },
+          "hashes": {
+            "md5": "3ff76be90c65256ea6b4a7552a25300c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_intent_recognition_eventargs.h"
+          },
+          "hashes": {
+            "md5": "dfb39717dad9d4196c4b92888005c932"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_intent_recognizer.h"
+          },
+          "hashes": {
+            "md5": "2d7433df0cdbf2c9d852aafc0c4f2d4d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_intent_trigger.h"
+          },
+          "hashes": {
+            "md5": "672b2c0dadb323d9696216f054dc6cc4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_language_understanding_model.h"
+          },
+          "hashes": {
+            "md5": "83718ee5d2a85dcd02bfb1ca7f8040e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_pattern_matching_model.h"
+          },
+          "hashes": {
+            "md5": "e4961cbc3ff9bd2cecde6de9345b472f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_pattern_matching_intent.h"
+          },
+          "hashes": {
+            "md5": "52063dc4b90361034b10227a6c5b77de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_pattern_matching_entity.h"
+          },
+          "hashes": {
+            "md5": "440cdeb3791ae6407a6f0cb92a668889"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_translation_result.h"
+          },
+          "hashes": {
+            "md5": "e6fa15f4cf791f890a0bb8bb45e9b3fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_translation_eventargs.h"
+          },
+          "hashes": {
+            "md5": "7a895f3c5b319571e1b0e473d58249cd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_translation_config.h"
+          },
+          "hashes": {
+            "md5": "8dfbbfae670a721efcb0b79f7e9583bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_translation_recognizer.h"
+          },
+          "hashes": {
+            "md5": "45f308b708b441097ae21709df51df69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_pronunciation_assessment_config.h"
+          },
+          "hashes": {
+            "md5": "31ee3f6b828ca78b4f2c3096a3a772bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_pronunciation_assessment_result.h"
+          },
+          "hashes": {
+            "md5": "07eaf564d88a2d1d24ed7dfc0963fd1d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_grammar.h"
+          },
+          "hashes": {
+            "md5": "f1383035d782c724754f342277c13d4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_grammar_phrase.h"
+          },
+          "hashes": {
+            "md5": "90d769f3c035944426c64cca497d4795"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_phrase_list_grammar.h"
+          },
+          "hashes": {
+            "md5": "65e426e53d74cb9f8289d02a947ebff8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_grammar_list.h"
+          },
+          "hashes": {
+            "md5": "cebd3ae6c8b411c6f1295636bd5480b3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_class_language_model.h"
+          },
+          "hashes": {
+            "md5": "c5144f89a9a24c1fd5261fdeca56b3fb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_session.h"
+          },
+          "hashes": {
+            "md5": "bb6e1da1e8b0dad2140ca99637467208"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_dialog_service_connector.h"
+          },
+          "hashes": {
+            "md5": "739e4413dde11535438c77fb684f4f39"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/c_api/speechapi_c_operations.h"
+          },
+          "hashes": {
+            "md5": "5c5c107137cb85eb82faa98bd4117774"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_dialog_service_connector_eventargs.h"
+          },
+          "hashes": {
+            "md5": "7fc57606198cdd65223de64105433d6b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_dialog_service_config.h"
+          },
+          "hashes": {
+            "md5": "462fa95815e5268baf34d9797dd32d27"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_connection.h"
+          },
+          "hashes": {
+            "md5": "3c51c17ce9d909270834dcf28707c01d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_connection_eventargs.h"
+          },
+          "hashes": {
+            "md5": "ba051dc1e0435bf6487ff67312328550"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_connection_message_eventargs.h"
+          },
+          "hashes": {
+            "md5": "bd19c5a61bf39059c33c7efe256c5ce5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_connection_message.h"
+          },
+          "hashes": {
+            "md5": "2f3d52c79a02e6af678895f3958e41d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation_translator.h"
+          },
+          "hashes": {
+            "md5": "16de6cbdd652770713f0e7d2b6312c6c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation.h"
+          },
+          "hashes": {
+            "md5": "9e28c5692979eae702ed6f66b1202c22"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_user.h"
+          },
+          "hashes": {
+            "md5": "9c25ac828bf209a794e33445b243a21b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_participant.h"
+          },
+          "hashes": {
+            "md5": "bb0d3c39c13d1a460806e14f6c3e2fbe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation_translator_events.h"
+          },
+          "hashes": {
+            "md5": "04e66432f6e23b1738264569fd400141"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation_transcription_eventargs.h"
+          },
+          "hashes": {
+            "md5": "05a5a8edc174e16b6fa1d2a6f6ae3d60"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation_transcription_result.h"
+          },
+          "hashes": {
+            "md5": "b74e3cc138feec96507562d741a3a995"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesizer.h"
+          },
+          "hashes": {
+            "md5": "70e1b70272e353f7efeadaccbfd7049f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesis_result.h"
+          },
+          "hashes": {
+            "md5": "99aebd03b4b543018c754bee5f75eff4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_synthesis_voices_result.h"
+          },
+          "hashes": {
+            "md5": "51d8e73768feb08d306a877006ae4a81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesis_eventargs.h"
+          },
+          "hashes": {
+            "md5": "97fc9674d5322e3499cfcb5777c7b7fa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesis_word_boundary_eventargs.h"
+          },
+          "hashes": {
+            "md5": "8aeda824d3696dc36f7066fd48e3936a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesis_viseme_eventargs.h"
+          },
+          "hashes": {
+            "md5": "fd71c5e36a9b174faebe2d7289826018"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speech_synthesis_bookmark_eventargs.h"
+          },
+          "hashes": {
+            "md5": "5798c0fedfb7c9b0405e521fb2502e1d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_keyword_recognition_result.h"
+          },
+          "hashes": {
+            "md5": "0ba56340d996cbf987545a1a39735733"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_keyword_recognition_eventargs.h"
+          },
+          "hashes": {
+            "md5": "cd7507cad48bdadf533f092b337cde54"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_keyword_recognizer.h"
+          },
+          "hashes": {
+            "md5": "2506e7aec0b26ee70f3c787059e2bd67"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_conversation_transcriber.h"
+          },
+          "hashes": {
+            "md5": "13fc26badccb6295736b3f7c0244db06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_auto_detect_source_lang_result.h"
+          },
+          "hashes": {
+            "md5": "a9d719d829a2778fe39b6b0921852448"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_source_language_recognizer.h"
+          },
+          "hashes": {
+            "md5": "b7321ff7093a0b180d4ad550ffe70b00"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speaker_recognizer.h"
+          },
+          "hashes": {
+            "md5": "83d14bbf03d5064c016a6b0bb1f59a06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speaker_recognition_result.h"
+          },
+          "hashes": {
+            "md5": "62373e60e52c8f5942972e7672313c64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speaker_verification_model.h"
+          },
+          "hashes": {
+            "md5": "c4dafb71dad01be55949d5a389d839f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_profile.h"
+          },
+          "hashes": {
+            "md5": "6a95683f4b8d428cfd9aa45d3aab57c4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_speaker_identification_model.h"
+          },
+          "hashes": {
+            "md5": "3087672056fbaf9ceb9f79f77c438e20"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_profile_client.h"
+          },
+          "hashes": {
+            "md5": "d9f97cba5a5ce28b008e7928ca4a6912"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_profile_result.h"
+          },
+          "hashes": {
+            "md5": "56a25119e6572bf5a75127c0753c28b6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_profile_enrollment_result.h"
+          },
+          "hashes": {
+            "md5": "53984cbc6e4c4f230c34848bc42a40fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_voice_profile_phrase_result.h"
+          },
+          "hashes": {
+            "md5": "549e397e3f036db322550131c7d7a0b2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_file_logger.h"
+          },
+          "hashes": {
+            "md5": "aae4477564004c1137ba6ae14113656b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_event_logger.h"
+          },
+          "hashes": {
+            "md5": "420afc196825c6027d765b71a8d58fd6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/packages/microsoft.cognitiveservices.speech.1.20.0/build/native/include/cxx_api/speechapi_cxx_memory_logger.h"
+          },
+          "hashes": {
+            "md5": "882a4f2b31474aabbd049d30669607f1"
+          }
+        }
+      ]
+    }
+  ]
+}

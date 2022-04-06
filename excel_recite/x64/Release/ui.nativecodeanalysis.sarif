@@ -1,0 +1,411 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "取消对 NULL 指针“pB”的引用。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 2,
+                  "endLine": 22,
+                  "endColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createButton@@YAPEAUbutton@@HHHHKPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "“pB”可能为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "已取消对“pB”的引用，但可能仍为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "“pB->pText”可能是“0”: 这不符合函数“strcpy”的规范。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 2,
+                  "endLine": 28,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?createButton@@YAPEAUbutton@@HHHHKPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 23,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 26,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“pText”是“strcpy”的输入/输出参数(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\string.h:130 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 28,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“pB->pText”不应为 NULL，因为这与“strcpy”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "“c_fps”可能是“0”: 这不符合函数“itoa”的规范。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                },
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 2,
+                  "endLine": 145,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?drawFps@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 144,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "“c_fps”为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 145,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“c_fps”是“itoa”的输入/输出参数(在 c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdlib.h:1316 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+                          },
+                          "region": {
+                            "startLine": 145,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "“c_fps”不应为 NULL，因为这与“itoa”上的 SAL 批注不一致"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00C4C1B0 -il C:\\Users\\13107\\AppData\\Local\\Temp\\_CL_a723f1baast -typedil -f ui.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I H:\\excel背单词\\excel_recite\\packages\\Microsoft.CognitiveServices.Speech.1.20.0\\build\\..\\build\\native\\include\\cxx_api -I H:\\excel背单词\\excel_recite\\packages\\Microsoft.CognitiveServices.Speech.1.20.0\\build\\..\\build\\native\\include\\c_api -nologo -W 3 -diagnostics:column -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DNDEBUG -D_CONSOLE -DWIN32 -D_MBCS -EHs -D_CPPUNWIND -EHc -MT -clrNoPureCRT -D_MT -GS -D_M_FP_PRECISE -permissive -Zc:wchar_t -Zc:forScope -Fox64\\Release\\ui.obj -Fdx64\\Release\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory H:\\excel背单词\\excel_recite\\excel_recite -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -wd 4430 -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I Include\\um -I Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///H:/excel背单词/excel_recite/excel_recite/ui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "66612827f7cc3a0e6d7ded796d03ac18"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/excel背单词/excel_recite/excel_recite/ui.h"
+          },
+          "hashes": {
+            "md5": "435fcf40b96d61cb63e3ab8afcaa41e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/graphics.h"
+          },
+          "hashes": {
+            "md5": "460de354441b2fe56a9423d4e85a65f3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files (x86)/microsoft visual studio/2019/community/vc/auxiliary/vs/include/easyx.h"
+          },
+          "hashes": {
+            "md5": "75bc84f2e5dc66c193cfd3e0a2510d84"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\excel_recite\</FILEPATH>
+      <FILENAME>logic.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “getcwd”。</DESCRIPTION>
+    <FUNCTION>logic::autoLoad</FUNCTION>
+    <DECORATED>?autoLoad@logic@@SAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$vector@UWord@@V?$allocator@UWord@@@std@@@3@AEAV?$vector@HV?$allocator@H@std@@@3@@Z</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

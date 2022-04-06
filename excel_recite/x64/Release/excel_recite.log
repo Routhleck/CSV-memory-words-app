@@ -1,105 +1,244 @@
-﻿  main.cpp
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(20,13): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(21,14): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(46,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(50,80): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(50,67): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(50,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(50,39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(52,80): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(52,67): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(52,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(52,39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(53,87): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(53,74): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(53,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(53,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(54,84): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(54,71): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(54,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(54,42): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(55,82): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(55,69): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(55,54): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(55,40): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(56,83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(56,70): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(56,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(56,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(57,90): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(57,77): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(57,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(57,48): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(58,85): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(58,72): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(58,57): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(58,43): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(59,83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(59,70): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(59,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(59,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(64,27): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(64,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(69,37): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(69,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(190,28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(190,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(192,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(192,27): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(272,42): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(272,28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(289,35): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(289,21): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(291,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(291,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(295,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(295,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(297,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(297,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(303,36): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(303,22): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(305,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(305,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(310,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(310,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(311,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(311,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(314,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(314,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(318,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(318,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(323,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(323,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(324,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(324,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(327,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(327,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(330,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(330,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(335,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(335,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(336,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(336,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(339,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(339,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(345,18): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(348,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(348,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(351,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(351,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(352,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(352,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(359,35): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(359,21): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(361,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(361,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(509,17): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(527,35): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(216,2): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getcwd. See online help for details.
-F:\c++_sourceCode\2022年\excel背单词\excel_recite\excel_recite\main.cpp(364,16): warning C4996: 'GetMouseMsg': This function is deprecated. Instead, use this new function: getmessage. See https://docs.easyx.cn/getmessage for details.
+﻿  ui.cpp
+H:\excel背单词\excel_recite\excel_recite\ui.h(8,13): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(9,14): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(10,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(11,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(20,80): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(20,67): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(20,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(20,39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(21,80): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(21,67): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(21,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(21,39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(22,87): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(22,74): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(22,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(22,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(23,88): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(23,75): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(23,60): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(23,46): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(24,84): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(24,71): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(24,56): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(24,42): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(25,82): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(25,69): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(25,54): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(25,40): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(26,87): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(26,74): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(26,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(26,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(27,83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(27,70): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(27,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(27,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(28,90): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(28,77): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(28,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(28,48): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(29,85): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(29,72): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(29,57): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(29,43): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(30,83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(30,70): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(30,55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(30,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(31,88): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(31,75): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(31,60): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(31,46): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(32,86): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(32,73): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(32,58): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(32,44): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(33,96): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(33,83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(33,68): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(33,54): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(34,89): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(34,76): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(34,61): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(34,47): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(35,87): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(35,74): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(35,59): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.h(35,45): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(28,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(36,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(36,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(41,39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(41,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(156,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(156,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(157,28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(157,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(158,28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(158,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(153,2): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(202,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(202,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(204,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(204,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(208,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(208,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(210,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(210,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(216,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(216,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(218,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(218,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(223,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(223,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(224,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(224,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(227,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(227,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(230,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(230,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(235,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(235,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(236,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(236,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(239,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(239,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(242,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(242,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(247,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(247,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(248,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(248,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(251,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(251,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(257,16): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(260,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(260,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(263,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(263,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(264,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(264,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(271,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(271,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(272,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(272,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(277,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(277,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(279,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(279,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(284,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(284,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(286,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(286,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(291,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(291,19): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(293,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(293,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(299,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(299,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(300,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(300,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(305,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(305,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(306,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(306,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(316,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(316,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(332,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(332,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(333,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(333,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(335,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(335,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(336,29): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(336,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(338,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(338,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(339,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(339,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(343,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(343,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(344,31): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(344,17): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(347,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(347,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(348,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(348,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(357,62): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(357,49): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(357,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(357,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(360,90): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(360,57): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(360,33): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(360,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(363,91): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(363,58): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(363,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(363,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(384,64): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(384,50): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(384,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(384,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(388,81): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(388,67): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(388,34): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(388,20): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(392,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(392,18): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(393,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(393,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(394,30): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+H:\excel背单词\excel_recite\excel_recite\ui.cpp(394,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+main.obj : warning LNK4006: "bool __cdecl compReview(struct Word const &,struct Word const &)" (?compReview@@YA_NAEBUWord@@0@Z) 已在 logic.obj 中定义；已忽略第二个定义
+main.obj : warning LNK4006: "bool __cdecl compRate(struct Word const &,struct Word const &)" (?compRate@@YA_NAEBUWord@@0@Z) 已在 logic.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * start" (?start@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * lastWord" (?lastWord@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * textToSpeech" (?textToSpeech@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * exitMemory" (?exitMemory@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * chineseSwitch" (?chineseSwitch@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "float Height" (?Height@@3MA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * reviewPlus" (?reviewPlus@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * exportFile" (?exportFile@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * remember" (?remember@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * undoMemoryLastWord" (?undoMemoryLastWord@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * forget" (?forget@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "float Width" (?Width@@3MA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * review" (?review@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * loadHistory" (?loadHistory@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * musicOn" (?musicOn@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * undoMemory" (?undoMemory@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "float uWidth" (?uWidth@@3MA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "float uHeight" (?uHeight@@3MA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * load" (?load@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+ui.obj : warning LNK4006: "struct button * save" (?save@@3PEAUbutton@@EA) 已在 main.obj 中定义；已忽略第二个定义
+H:\excel背单词\excel_recite\x64\Release\excel_recite.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
   正在生成代码
-  1 of 375 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  1 of 2665 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    14 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  excel_recite.vcxproj -> F:\c++_sourceCode\2022年\excel背单词\excel_recite\x64\Release\excel_recite.exe
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * start" (?start@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * lastWord" (?lastWord@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * textToSpeech" (?textToSpeech@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * exitMemory" (?exitMemory@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * chineseSwitch" (?chineseSwitch@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "float Height" (?Height@@3MA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * reviewPlus" (?reviewPlus@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * exportFile" (?exportFile@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * remember" (?remember@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * undoMemoryLastWord" (?undoMemoryLastWord@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * forget" (?forget@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "float Width" (?Width@@3MA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * review" (?review@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * loadHistory" (?loadHistory@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * musicOn" (?musicOn@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * undoMemory" (?undoMemory@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "float uWidth" (?uWidth@@3MA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "float uHeight" (?uHeight@@3MA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * load" (?load@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+* CIL library *(* CIL module *) : warning LNK4006: "struct button * save" (?save@@3PEAUbutton@@EA) 已在 * CIL library *(* CIL module *) 中定义；已忽略第二个定义
+H:\excel背单词\excel_recite\x64\Release\excel_recite.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  excel_recite.vcxproj -> H:\excel背单词\excel_recite\x64\Release\excel_recite.exe

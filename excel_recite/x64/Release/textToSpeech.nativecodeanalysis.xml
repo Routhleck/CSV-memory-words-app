@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_recognition_result.h</FILENAME>
+      <LINE>141</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Result_Reason”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::RecognitionResult::PopulateResultFields</FUNCTION>
+    <DECORATED>?PopulateResultFields@RecognitionResult@Speech@CognitiveServices@Microsoft@@AEAAXPEAU_azac_empty@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4ResultReason@234@1@Z</DECORATED>
+    <FUNCLINE>125</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_recognition_result.h</FILENAME>
+      <LINE>230</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Result_CancellationReason”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::CancellationDetails::GetCancellationReason</FUNCTION>
+    <DECORATED>?GetCancellationReason@CancellationDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4CancellationReason@234@PEAVRecognitionResult@234@@Z</DECORATED>
+    <FUNCLINE>228</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_recognition_result.h</FILENAME>
+      <LINE>240</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Result_CancellationErrorCode”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::CancellationDetails::GetCancellationErrorCode</FUNCTION>
+    <DECORATED>?GetCancellationErrorCode@CancellationDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4CancellationErrorCode@234@PEAVRecognitionResult@234@@Z</DECORATED>
+    <FUNCLINE>238</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_recognition_result.h</FILENAME>
+      <LINE>299</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Result_NoMatchReason”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::NoMatchDetails::GetNoMatchReason</FUNCTION>
+    <DECORATED>?GetNoMatchReason@NoMatchDetails@Speech@CognitiveServices@Microsoft@@AEAA?AW4NoMatchReason@234@PEAVRecognitionResult@234@@Z</DECORATED>
+    <FUNCLINE>297</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_audio_data_stream.h</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Stream_Status”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::AudioDataStream::GetStatus</FUNCTION>
+    <DECORATED>?GetStatus@AudioDataStream@Speech@CognitiveServices@Microsoft@@QEAA?AW4StreamStatus@234@XZ</DECORATED>
+    <FUNCLINE>104</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>H:\excel背单词\excel_recite\packages\Microsoft.CognitiveServices.Speech.1.20.0\build\native\include\cxx_api\</FILEPATH>
+      <FILENAME>speechapi_cxx_voice_info.h</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“Synthesis_VoiceType”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>Microsoft::CognitiveServices::Speech::VoiceInfo::{ctor}</FUNCTION>
+    <DECORATED>??0VoiceInfo@Speech@CognitiveServices@Microsoft@@QEAA@PEAU_azac_empty@@@Z</DECORATED>
+    <FUNCLINE>62</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
