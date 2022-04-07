@@ -370,9 +370,10 @@ void drawProcess(int ForgetTime, int MemoryTime)
 	int needTime = 0;
 	float rate = ((memoryTime - forgetTime) / (memoryTime + 1));
 	
-	
-	while (((memoryTime - forgetTime + needTime) / (memoryTime + 1)) <= 0.55)
+
+	while ((memoryTime - forgetTime) / (memoryTime + 1) <= 0.55)
 	{
+		memoryTime++;
 		needTime++;
 	}
 	
