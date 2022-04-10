@@ -260,6 +260,47 @@ void logic::rememberWord(int& npos, vector<Word>& words, bool& bool_stop, bool& 
 	}
 }
 
+void logic::master(int& npos, vector<Word>& words, bool& bool_stop, bool& bool_optimize, bool& bool_start, bool& bool_end, int& amount, int& lastPos)
+{
+	if (bool_start == true && bool_end == false) {
+		lastPos = npos;
+		while ((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1) <= 0.55)
+		{
+			words[npos].ReviewTime++;
+		}
+		words[npos].History.push_back(2);
+		bool_stop = false;
+		if (npos < (int)(words.size() - 1)) {
+			if (bool_optimize)
+			{
+				npos++;
+				while (words[npos].ReviewTime != 0 && bool_stop == false) {
+					if (((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1)) > 0.55) {
+						npos++;
+					}
+					else {
+						bool_stop = true;
+					}
+				}
+				amount--;
+			}
+			else
+			{
+				npos++;
+				amount--;
+			}
+		}
+		else
+			amount = -1;
+		if (amount < 0)
+		{
+			bool_start = false;
+			bool_end = true;
+			bool_optimize = false;
+		}
+	}
+}
+
 void logic::forgetWord(int& npos, vector<Word>& words, bool& bool_stop, bool& bool_optimize, bool& bool_start, bool& bool_end, int& amount, int& lastPos)
 {
 	if (bool_start == true && bool_end == false) {
@@ -321,6 +362,11 @@ void logic::undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npo
 			words[npos].ReviewTime--;
 			words[npos].History.pop_back();
 		}
+		else if (words[npos].History.back() == 2)
+		{
+			words[npos].ForgetTime++;
+			words[npos].History.pop_back();
+		}
 		amount++;
 	}
 }
@@ -362,6 +408,7 @@ void logic::clearHistory()
 //5 撤销记忆
 //6 上个单词
 //7 撤销上个单词记忆
+//8 掌握
 void logic::saveHistory(int choice)
 {
 	char buffer[MAX_PATH];
@@ -420,7 +467,12 @@ void logic::readHistory(int& npos, vector<Word>& words, vector<Word>::iterator& 
 				logic::undo(bool_start, bool_end, words, npos,amount);
 			}
 			break;
+		case 8:
+			logic::master(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount, lastPos);
+			break;
 		}
 		iterInt++;
 	}
 }
+
+

@@ -93,5 +93,6 @@ public:
 	static void clearHistory();
 	static void saveHistory(int choice);
 	static void readHistory(int& npos, vector<Word>& words, vector<Word>::iterator& iter, int& amount, bool& bool_start, bool& bool_end, bool& bool_chinese, int& startPos, int& wordMaster, bool& bool_optimize, int& lastPos, bool& bool_stop);
+	static void master(int& npos, vector<Word>& words, bool& bool_stop, bool& bool_optimize, bool& bool_start, bool& bool_end, int& amount, int& lastPos);
 };
 #endif

@@ -77,6 +77,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 			textToSpeech->color = 0xD7D7B9;
 		else if (pB == loadHistory)
 			loadHistory->color = 0xB69C88;
+		else if (pB == master)
+			master->color = 0x20A5DA;
 
 		return true;
 	}
@@ -112,6 +114,8 @@ bool mouseInButton(struct button* pB, MOUSEMSG m)
 		textToSpeech->color = 0xFFFFE1;
 	else if (pB == loadHistory)
 		loadHistory->color = 0xDEC4B0;
+	else if (pB == master)
+		master->color = 0x00D7FF;
 	return false;
 }
 //ÅÐ¶ÏÊó±êµã»÷°´Å¥
@@ -172,6 +176,7 @@ void drawAllButton(bool bool_start,bool bool_wordEmpty) {
 		drawButton(undoMemoryLastWord);
 		drawButton(textToSpeech);
 		drawButton(exitMemory);
+		drawButton(master);
 	}
 	else {
 		drawButton(load);

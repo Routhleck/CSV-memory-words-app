@@ -133,8 +133,9 @@ int main() {
 			logic::playMusic(lerp, musicPath);
 		}
 
-		//7记得
+		//开始进入记忆
 		if (bool_start) {
+			//7记得
 			if (clickButton(remember, m))
 			{
 				logic::saveHistory(3);
@@ -156,6 +157,14 @@ int main() {
 					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
 					thread_ttf.detach();
 				}
+			}
+
+			//掌握
+			if (clickButton(master, m))
+			{
+				logic::saveHistory(8);
+				logic::master(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount, lastPos);
+				
 			}
 
 			//10撤销记忆

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>H:\excel背单词\excel_recite\x64\Release\excel_recite.exe</FullPath>
+      <FullPath>F:\c++_sourceCode\project\CSVrecite\x64\Release\excel_recite.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

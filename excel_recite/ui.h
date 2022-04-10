@@ -25,14 +25,15 @@ struct button* musicOn = createButton(10 * uWidth, 250 * uHeight, 200 * uWidth, 
 struct button* start = createButton(10 * uWidth, 320 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "开始记忆");
 struct button* reviewPlus = createButton(10 * uWidth, 380 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "优化复习");
 struct button* review = createButton(10 * uWidth, 440 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "复习本轮");
-struct button* chineseSwitch = createButton(10 * uWidth, 520 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "释义显示");
-struct button* remember = createButton(10 * uWidth, 580 * uHeight, 200 * uWidth, 50 * uHeight, 0x32CD32, "记    得");
-struct button* forget = createButton(10 * uWidth, 640 * uHeight, 200 * uWidth, 50 * uHeight, 0x3C14DC, "遗    忘");
+struct button* chineseSwitch = createButton(10 * uWidth, 460 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "释义显示");
+struct button* remember = createButton(10 * uWidth, 520 * uHeight, 200 * uWidth, 50 * uHeight, 0x32CD32, "记    得");
+struct button* forget = createButton(10 * uWidth, 580 * uHeight, 200 * uWidth, 50 * uHeight, 0x3C14DC, "遗    忘");
 struct button* undoMemory = createButton(250 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "撤销记忆");
 struct button* lastWord = createButton(470 * uWidth, 650 * uHeight, 200 * uWidth, 50 * uHeight, 0xACA600, "上个单词");
 struct button* undoMemoryLastWord = createButton(690 * uWidth, 650 * uHeight, 370 * uWidth, 50 * uHeight, 0xACA600, "撤销上个单词记忆");
-struct button* textToSpeech = createButton(10 * uWidth, 460 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "读    音");
+struct button* textToSpeech = createButton(10 * uWidth, 400 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "读    音");
 struct button* exitMemory = createButton(10 * uWidth, 320 * uHeight, 200 * uWidth, 50 * uHeight, 0xFFFFE1, "退出记忆");
+struct button* master = createButton(10 * uWidth, 640 * uHeight, 200 * uWidth, 50 * uHeight, 0x00D7FF, "掌    握");
 
 double fps();//fps计算
 void drawFps();//fps绘制
