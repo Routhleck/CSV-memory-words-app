@@ -364,7 +364,10 @@ void logic::undo(bool& bool_start, bool& bool_end, vector<Word>& words, int& npo
 		}
 		else if (words[npos].History.back() == 2)
 		{
-			words[npos].ForgetTime++;
+			while ((float)(words[npos].ReviewTime - words[npos].ForgetTime) / (float)(words[npos].ReviewTime + 1) >= 0.55)
+			{
+				words[npos].ReviewTime--;
+			}
 			words[npos].History.pop_back();
 		}
 		amount++;

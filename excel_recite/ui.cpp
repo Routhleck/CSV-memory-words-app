@@ -310,6 +310,12 @@ void drawMain(bool bool_chinese, char* value0, char* value1, char* value2, int v
 			settextstyle(30 * uHeight, 15 * uWidth, "ºÚÌå");
 			outtextxy(730 * uWidth, 230 * uHeight, "ÒÅÍü");
 		}
+		else if (bool_history == 2) {
+			settextcolor(YELLOW);
+			setbkmode(TRANSPARENT);
+			settextstyle(30 * uHeight, 15 * uWidth, "ºÚÌå");
+			outtextxy(730 * uWidth, 230 * uHeight, "ÕÆÎÕ");
+		}
 	}
 }
 

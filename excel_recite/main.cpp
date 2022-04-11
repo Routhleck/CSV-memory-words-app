@@ -164,7 +164,11 @@ int main() {
 			{
 				logic::saveHistory(8);
 				logic::master(npos, words, bool_stop, bool_optimize, bool_start, bool_end, amount, lastPos);
-				
+				if (amount >= 0) {
+					read = true;
+					thread thread_ttf(ttf, ref(words[npos].TheWord), ref(read), ref(config));
+					thread_ttf.detach();
+				}
 			}
 
 			//10³·Ïú¼ÇÒä
